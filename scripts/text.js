@@ -1,3 +1,4 @@
+// font bold part
 let marked = true;
 document.getElementById('bold-btn').addEventListener('click', function () {
     const textField = document.getElementById('text-field');
@@ -10,35 +11,36 @@ document.getElementById('bold-btn').addEventListener('click', function () {
         marked = true;
     }
 })
-
+// font italic part
 document.getElementById('italic-btn').addEventListener('click', function () {
     const textField = document.getElementById('text-field');
-    if(marked === true){
+    if (marked === true) {
         textField.style.fontStyle = 'italic';
         marked = false;
     }
-    else{
+    else {
         textField.style.fontStyle = 'normal';
         marked = true;
     }
 })
+// text underline part
 document.getElementById('underline-btn').addEventListener('click', function () {
     const textField = document.getElementById('text-field');
-    if(marked === true){
+    if (marked === true) {
         textField.style.textDecoration = 'underline';
         marked = false;
     }
-    else{
+    else {
         textField.style.textDecoration = 'none';
         marked = true;
     }
 })
 
 // This is background color part
-document.getElementById('bg-btn').addEventListener('click', function(){
+document.getElementById('bg-btn').addEventListener('click', function () {
     const colorField = document.getElementById('color-field')
     const colorFieldValue = colorField.value;
-    const textField =document.getElementById('text-field');
+    const textField = document.getElementById('text-field');
     textField.style.backgroundColor = colorFieldValue;
 })
 
